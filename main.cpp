@@ -23,72 +23,72 @@ int main(void){
     int attempts = 0;
     int size;
 
-    // Create new hash tables, print info, execute processes.
+    // Create new hash tables, print info, execute processes, print results.
     size = rand() % (MAX - MIN + 1) + MIN;
     HashMap table(size);
     printOutput(size, "RSHash()");
     attempts = execute(table, size, RS);
     printResult(table, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table2(size);
-    // printOutput(size, "JSHash()");
-    // attempts = execute(table2, size, JS);
-    // printResult(table2, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table2(size);
+    printOutput(size, "JSHash()");
+    attempts = execute(table2, size, JS);
+    printResult(table2, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table3(size);
-    // printOutput(size, "PJWHash()");
-    // attempts = execute(table3, size, PJW);
-    // printResult(table3, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table3(size);
+    printOutput(size, "PJWHash()");
+    attempts = execute(table3, size, PJW);
+    printResult(table3, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table4(size);
-    // printOutput(size, "ELFHash()");
-    // attempts = execute(table4, size, ELF);
-    // printResult(table4, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table4(size);
+    printOutput(size, "ELFHash()");
+    attempts = execute(table4, size, ELF);
+    printResult(table4, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table5(size);
-    // printOutput(size, "BKDRHash()");
-    // attempts = execute(table5, size, BKDR);
-    // printResult(table5, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table5(size);
+    printOutput(size, "BKDRHash()");
+    attempts = execute(table5, size, BKDR);
+    printResult(table5, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table6(size);
-    // printOutput(size, "SDBMHash()");
-    // attempts = execute(table6, size, SDBM);
-    // printResult(table6, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table6(size);
+    printOutput(size, "SDBMHash()");
+    attempts = execute(table6, size, SDBM);
+    printResult(table6, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table7(size);
-    // printOutput(size, "DJBHash()");
-    // attempts = execute(table7, size, DJB);
-    // printResult(table7, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table7(size);
+    printOutput(size, "DJBHash()");
+    attempts = execute(table7, size, DJB);
+    printResult(table7, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table8(size);
-    // printOutput(size, "DEKHash()");
-    // attempts = execute(table8, size, DEK);
-    // printResult(table8, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table8(size);
+    printOutput(size, "DEKHash()");
+    attempts = execute(table8, size, DEK);
+    printResult(table8, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table9(size);
-    // printOutput(size, "BPHash()");
-    // attempts = execute(table9, size, BP);
-    // printResult(table9, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table9(size);
+    printOutput(size, "BPHash()");
+    attempts = execute(table9, size, BP);
+    printResult(table9, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table10(size);
-    // printOutput(size, "FNVHash()");
-    // attempts = execute(table10, size, FNV);
-    // printResult(table10, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table10(size);
+    printOutput(size, "FNVHash()");
+    attempts = execute(table10, size, FNV);
+    printResult(table10, attempts);
 
-    // size = rand() % (MAX - MIN + 1) + MIN;
-    // HashMap table11(size);
-    // printOutput(size, "APHash()");
-    // attempts = execute(table11, size, AP);
-    // printResult(table11, attempts);
+    size = rand() % (MAX - MIN + 1) + MIN;
+    HashMap table11(size);
+    printOutput(size, "APHash()");
+    attempts = execute(table11, size, AP);
+    printResult(table11, attempts);
 
     return 0;
 }
@@ -144,6 +144,8 @@ void printOutput(int size, string func) {
          << " has been created." << endl << endl;
 
     cout << "Updates provided at: " << endl;
+    cout << "Insertion: " << size / (7/8) << endl;
+    cout << "Insertion: " << size / (3/4) << endl;
     cout << "Insertion: " << size / 2 << endl;
     cout << "Insertion: " << size / 4 << endl;
     cout << "Insertion: " << size / 8 << endl;
