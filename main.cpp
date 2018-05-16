@@ -9,7 +9,7 @@ enum GeneralHashFunction {
 
 const int MIN = 1024;
 const int MAX = 33554432;
-const int STRING_SIZE = 26;
+const int STRING_SIZE = 56;
 const string CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+{}|";
 
 void printOutput(int, string);
@@ -17,7 +17,7 @@ int execute(HashMap, int, GeneralHashFunction);
 void printResult(HashMap, int);
 string generateString();
 
-int main(void){
+int main(void) {
     // Size of table
     srand(static_cast<unsigned int>(time(0)));
     int attempts = 0;
@@ -144,8 +144,6 @@ void printOutput(int size, string func) {
          << " has been created." << endl << endl;
 
     cout << "Updates provided at: " << endl;
-    cout << "Insertion: " << size / (7/8) << endl;
-    cout << "Insertion: " << size / (3/4) << endl;
     cout << "Insertion: " << size / 2 << endl;
     cout << "Insertion: " << size / 4 << endl;
     cout << "Insertion: " << size / 8 << endl;

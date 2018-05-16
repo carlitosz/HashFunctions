@@ -42,8 +42,6 @@ public:
         }
 
         // Provide updates (since this takes a long time!)
-        if (tableSize / (7/8) == numElems) printUpdate(tableSize / (7/8));
-        if (tableSize / (3/4) == numElems) printUpdate(tableSize / (3/4));
         if (tableSize / 2 == numElems) printUpdate(tableSize / 2);
         if (tableSize / 4 == numElems) printUpdate(tableSize / 4);
         if (tableSize / 8 == numElems) printUpdate(tableSize / 8);
